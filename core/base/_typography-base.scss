@@ -1,6 +1,3 @@
-// Headings
-// --------------------------------------------------
-// stylelint-disable selector-max-type
 h1,
 h2,
 h3,
@@ -11,33 +8,37 @@ h6 {
   margin-bottom: 0;
 }
 
-h1 { @include h1; }
-h2 { @include h2; }
-h3 { @include h3; }
-h4 { @include h4; }
-h5 { @include h5; }
-h6 { @include h6; }
-
-// Body text
-// --------------------------------------------------
+h1 {
+  @include h1;
+}
+h2 {
+  @include h2;
+}
+h3 {
+  @include h3;
+}
+h4 {
+  @include h4;
+}
+h5 {
+  @include h5;
+}
+h6 {
+  @include h6;
+}
 
 p {
   margin-top: 0;
-  // stylelint-disable-next-line primer/spacing
   margin-bottom: 10px;
 }
 
 small {
-  // stylelint-disable-next-line primer/typography
   font-size: 90%;
 }
 
 blockquote {
   margin: 0;
 }
-
-// Lists
-// --------------------------------------------------
 
 ul,
 ol {
@@ -62,9 +63,6 @@ dd {
   margin-left: 0;
 }
 
-// Code
-// --------------------------------------------------
-
 tt,
 code {
   font-family: $mono-font;
@@ -76,13 +74,4 @@ pre {
   margin-bottom: 0;
   font-family: $mono-font;
   font-size: $font-size-small;
-}
-
-// Octicons
-// --------------------------------------------------
-
-// Move this over here as a temporary override to the octicons source repo
-// instead of updating that upstream.
-.octicon {
-  vertical-align: text-bottom;
 }
